@@ -2,7 +2,7 @@ import { initialState } from './shared';
 
 import { ADD, reducer as addReducer } from './actions/add';
 import { TOGGLE, reducer as toggleReducer } from './actions/toggle';
-import { CLEAR_COMPLETED, reducer as clearComplutedReducer } from './actions/clear-completed';
+import { CLEAR_COMPLETED, reducer as clearCompletedReducer } from './actions/clear-completed';
 import { COMPLETE, reducer as completeReducer } from './actions/complete';
 import { DESTROY, reducer as destroyReducer } from './actions/destroy';
 import { EDIT, reducer as editReducer } from './actions/edit';
@@ -29,7 +29,7 @@ export const selectors = todoSelectors;
 const actionHandlers = {
   [ADD]: addReducer,
   [TOGGLE]: toggleReducer,
-  [CLEAR_COMPLETED]: clearComplutedReducer,
+  [CLEAR_COMPLETED]: clearCompletedReducer,
   [COMPLETE]: completeReducer,
   [DESTROY]: destroyReducer,
   [EDIT]: editReducer,
