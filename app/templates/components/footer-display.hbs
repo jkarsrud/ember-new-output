@@ -1,0 +1,36 @@
+<span class='todo-count'>
+  <strong>{{props.todosCount}} {{itemWord}} left</strong>
+</span>
+
+<ul class="filters">
+  <li>
+    <a
+      onclick={{action props.showAll}}
+      class={{if showAll "selected"}}
+      style="cursor: pointer;">
+      All
+    </a>
+  </li>
+
+  <li>
+    <a
+      onclick={{action props.showActive}}
+      class={{if showActive "selected"}}
+      style="cursor: pointer;">
+      Active
+    </a>
+  </li>
+
+  <li>
+    <a
+      onclick={{action props.showCompleted}}
+      class={{if showCompleted "selected"}}
+      style="cursor: pointer;">
+      Completed
+    </a>
+  </li>
+</ul>
+
+{{#if showClearButton}}
+  <button onclick={{action props.clearCompleted}} class="clear-completed">Clear completed</button>
+{{/if}}

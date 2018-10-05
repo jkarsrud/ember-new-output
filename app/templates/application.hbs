@@ -1,5 +1,13 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h1>todos</h1>
 
-{{outlet}}
+<div class='todoapp'>
+  <UiHeader />
+
+  <section class='main'>
+    <input type="checkbox" class="toggle-all" value="on">
+
+    <TodoList />
+  </section>
+
+  <UiFooter />
+</div>
